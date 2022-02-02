@@ -15,10 +15,12 @@ class Player:
         return name
 
     def validate_name(self, name):
+        if (len(name) > 20 or len(name) == 0):
+            return False
         for letter in name:
-            if letter not in string.ascii_letters or len(name) > 20:
+            if letter not in string.ascii_letters:
                 return False
-        return name
+        return True
 
     def update_name(self, name):
         self.name = name

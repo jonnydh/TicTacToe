@@ -3,7 +3,7 @@ from app.Board import Board
 
 
 class TicTacToe:
-    def __init__(self, board):
+    def __init__(self):
         self.welcome()
         self.player1 = Player("Player 1", "X", 0)
         self.player2 = Player("Player 2", "O", 0)
